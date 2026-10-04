@@ -1,6 +1,10 @@
 ---
 name: update-github-info
 description: Draft website updates for Mona's GitHub Info site from official GitHub sources.
+engine:
+  id: copilot
+  # Pin a concrete CLI model; auto resolved to an unsupported model at runtime.
+  model: gpt-5.4
 on:
   workflow_dispatch:
   schedule:
